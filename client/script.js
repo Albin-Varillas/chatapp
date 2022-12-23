@@ -16,6 +16,7 @@ const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", async () => {
+  console.log(input.value);
   await fetch("http://localhost:3000/message", {
     body: JSON.stringify({
       message: input.value,
